@@ -43,9 +43,9 @@ try:
     sanity_check()
     setup.setup_binaries()
     setup.setup_path(False)
-    endpath = vars.INSTALL_PATH + '/fc'
+    endpath = vars.INSTALL_PATH + '/terror'
     # After this line, we have two possible paths: installing, or updating/repairing
-    if os.path.exists(vars.INSTALL_PATH + '/fc/gameinfo.txt'):
+    if os.path.exists(vars.INSTALL_PATH + '/terror/gameinfo.txt'):
         if gui.message_yes_no(("It looks like the mod's already installed. Do you want to update it?")):
             downloads.pull(endpath)
             gui.message_end(_("All done!"), 0)
